@@ -1,0 +1,14 @@
+# 1. Adiciona todos os arquivos que criamos
+git add .
+
+# 2. Faz o 1º commit oficial
+git commit -m "feat: implementa modelos base (Transacao, SaldoInsuficienteException, Conta)"
+
+# 3. Define a branch principal como main
+git branch -M main
+
+# 4. Conecta o seu PC ao novo repositório no GitHub (troque SEU-USUARIO pelo seu login)
+git remote add origin https://github.com/SEU-USUARIO/MiniBanco.ConsoleApp.git
+
+# 5. Envia o código para o GitHub
+git push -u origin main
