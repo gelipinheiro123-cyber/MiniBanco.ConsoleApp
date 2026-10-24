@@ -1,0 +1,14 @@
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\MiniBanco.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\MiniBanco.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\MiniBanco.ConsoleApp.AssemblyInfo.cs
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\MiniBanco.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\bin\Debug\net10.0\MiniBanco.ConsoleApp.exe
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\bin\Debug\net10.0\MiniBanco.ConsoleApp.deps.json
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\bin\Debug\net10.0\MiniBanco.ConsoleApp.runtimeconfig.json
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\bin\Debug\net10.0\MiniBanco.ConsoleApp.dll
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\bin\Debug\net10.0\MiniBanco.ConsoleApp.pdb
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\MiniBanco.ConsoleApp.dll
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\refint\MiniBanco.ConsoleApp.dll
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\MiniBanco.ConsoleApp.pdb
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\MiniBanco.ConsoleApp.genruntimeconfig.cache
+C:\Users\GeliP\Projetos\minibanco-dotnet\src\MiniBanco.ConsoleApp\obj\Debug\net10.0\ref\MiniBanco.ConsoleApp.dll
