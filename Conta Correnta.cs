@@ -1,91 +1,61 @@
 using System;
 
-namespace MiniBancoConsoleApp;
-
-class Program
+namespace MiniBancoConsoleApp
 {
-    static void Main()
+    public class ContaCorrente
     {
-        // Os nomes e os saldos (o João já começa com -85.50)
-        string[] nomes = { "Maria", "João", "Júlia" };
-        decimal[] saldos = { 150.75m, -85.50m, 300.25m };
-        
-        int escolhaConta = 0;
-
-        while (escolhaConta != 4)
+        public static void Main()
         {
-            Console.Clear();
-            Console.WriteLine("=== MINIBANCO .NET - MOTOR DE GESTAO DE CONTAS ===");
-            Console.WriteLine("==================================================");
-            Console.WriteLine("PROCESSANDO CONTA");
-            Console.WriteLine("=============================================");
-            Console.WriteLine(">DADOS DA CONTA :");
-            Console.WriteLine("1 - " + nomes[0] + " (R$ " + saldos[0] + ")");
-            Console.WriteLine("2 - " + nomes[1] + " (R$ " + saldos[1] + ")");
-            Console.WriteLine("3 - " + nomes[2] + " (R$ " + saldos[2] + ")");
-            Console.WriteLine("4 - Sair");
-            Console.Write("Digite o numero: ");
+            // Inicialização dos dados das contas
+            string[] nomes = { "Maria", "João", "Julia" };
+            decimal[] saldos = { 150.75m, -85.50m, 300.25m };
 
-            try
+            int escolhaConta = 0;
+
+            while (escolhaConta != 4)
             {
-                escolhaConta = int.Parse(Console.ReadLine());
-
-                if (escolhaConta >= 1 && escolhaConta <= 3)
-                {
-                    int i = escolhaConta - 1; // Pega a posição certa (0, 1 ou 2)
-                    int acao = 0;
-
-                    while (acao != 4)
-                    {
-                        Console.Clear();
-                        Console.WriteLine("CONTA DE " + nomes[i] + " | Saldo: R$ " + saldos[i]);
-                        Console.WriteLine("1 - Depositar");
-                        Console.WriteLine("2 - Sacar");
-                       Console.WriteLine("3 - Cobrar Tarifa");
-                        Console.WriteLine("4 - FINALIZAR");
-                        Console.Write("Escolha a acao: ");
-
-                  acao =int.Parse(Console.ReadLine());
-
-                  if(acao ==1)
-                        {
-                            Console.WriteLine("valor do deposito");
-                            decimal valor = decimal.Parse(Console.ReadLine());
-                            saldos[1] = saldos [1]+valor;
-                            Console.WriteLine("Deposito Realizado");
-                        }
-                        else if (acao ==2 || acao == 3)
-                        {
-                            Console.WriteLine("valor");
-                            decimal valor= decimal.Parse(Console.ReadLine());
-                        
-                            if(saldos[i] - valor<0)
-                            {
-                                Console.WriteLine ("erro:saldo insuficiente");
-                            }
-                            else
-                            {
-                                saldos[i] =saldos[i] -valor;
-                                Console.WriteLine("operacao realizada com sucesso");
-                            }
-                        }
-
-                        if (acao == 4)
-                        {
-                            Console.WriteLine("Pressione Enter para continiuar");
-                            Console.ReadLine();
-                }
-                    }
-                }
-            }
-
+                Console.Clear();
+                Console.WriteLine("--- MINIBANCO .NET - MOTOR DE GESTAO DE CONTAS ---");
                 
-            catch(Exception)
-            {
-                    Console.WriteLine(" erro:digite apenas o numero valido");
-                    Console.WriteLine("Pressione Enter para continuar");
-                    Console.ReadLine();
+                // Exibe as contas disponíveis
+                for (int i = 0; i < nomes.Length; i++)
+                {
+                    Console.WriteLine($"[{i}] Conta de: {nomes[i]} | Saldo: R$ {saldos[i]}");
+                }
+                
+                Console.WriteLine("\n[4] Sair do Sistema");
+                Console.Write("\nEscolha uma opção/conta: ");
+                
+                if (!int.TryParse(Console.ReadLine(), out escolhaConta))
+                {
+                    continue;
+                }
+
+                if (escolhaConta >= 0 && escolhaConta < nomes.Length)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"\nGerenciando conta de: {nomes[escolhaConta]}");
+                    Console.WriteLine("[1] Sacar / Depositar");
+                    Console.Write("Escolha a ação: ");
+                    string acao = Console.ReadLine();
+
+                    if (acao == "1")
+                    {
+                        Console.Write("Digite o valor da operação: ");
+                        if (decimal.TryParse(Console.ReadLine(), out decimal valor))
+                        {
+                            // Altera o saldo da conta selecionada dinamicamente
+                            saldos[escolhaConta] += valor;
+                            Console.WriteLine($"Operação realizada! Novo saldo: R$ {saldos[escolhaConta]}");
+                        }
+                    }
+                    
+                    Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                    Console.ReadKey();
+                }
             }
-            }
+            
+            Console.WriteLine("Sistema encerrado.");
         }
     }
+}
