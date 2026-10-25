@@ -1,6 +1,6 @@
 using System;
-using System.Diagnostics;
-using System.Runtime.CompilerServices;
+
+namespace MiniBancoConsoleApp;
 
 class Program
 {
@@ -89,5 +89,3 @@ class Program
             }
         }
     }
-                
-                
