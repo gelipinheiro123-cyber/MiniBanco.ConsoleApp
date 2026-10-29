@@ -1,4 +1,4 @@
-# PROJETO DO MINIBANCO
+# MINIBANCO.CONSOLE.APP MOTOR DE GESTÃO DE CONTAS
 
 Este é o sistema do Minibanco,um programa simples desenvolvido para funcionar diretamente no Terminal de Comandos.
 
@@ -44,3 +44,4 @@ Ao iniciar o sistema, um menu é exibido para que o usúario possa Escolher qual
 
 
   #
+  obs:tive muita dificuldade de subir o video junto aqui
