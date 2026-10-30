@@ -42,6 +42,6 @@ Ao iniciar o sistema, um menu é exibido para que o usúario possa Escolher qual
   * Enfrentar e corrigir  deu muito trabalho  entende-los , e um processo que vale a pena colocando-os em pratica mesmo com alguns erros vejo a verdade do desenvolvimento funcional e pratico.
   * 
 
-vou deixar aqui o link do meu video que não consegui deixar por completo so em duas pequenas etapas estou começando e não irei desistir ainda obs pedi ajuda da IA https://drive.google.com/file/d/175DT0YD4uM9I73KA48iIdXyEEzWVlPQ8/view?usp=sharing
+vou deixar aqui o link do meu video que não consegui deixar por completo so em duas pequenas etapas estou começando e não irei desistir ainda obs pedi ajuda da IA https://drive.google.com/file/d/175DT0YD4uM9I73KA48iIdXyEEzWVlPQ8/view?usp=sharing                                                                                       https://drive.google.com/file/d/1SPVtwXJLt6931nTBLrtricm03wua1ZvN/view?usp=sharing
   #
   obs:tive muita dificuldade de subir o video junto aqui
